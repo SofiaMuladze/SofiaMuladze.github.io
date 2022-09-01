@@ -1,0 +1,654 @@
+/* Colors */
+/* Fonts */
+body .main .portfolio .portfolio-cards .card .card-text h4, body .main .portfolio .portfolio-cards .card .card-text .text-git p, body .main .about .about-contenent .about-text p, body .sidebar .menu .menu-text .menu-sections a, body .main .hero .hero-text h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+}
+
+body .main .contact .contact-cards .contact-content p, body .main .contact .contact-cards .contact-content h5, body .main .about .about-contenent .about-text h4, body h3, body .main .hero .hero-text .blue {
+  font-family: "Sarala", sans-serif;
+  font-weight: 400;
+}
+
+body .main .portfolio .portfolio-cards .card .card-text .title h2, body .main .portfolio .portfolio-tab .tab {
+  font-family: "Sarala", sans-serif;
+  font-weight: 700;
+}
+
+/* font style */
+body .main .hero .hero-text .blue {
+  font-size: 60px;
+  color: #559FFF;
+}
+
+body h3 {
+  font-size: 36px;
+  color: #559FFF;
+}
+
+body .main .contact .contact-cards .contact-content h5, body .main .about .about-contenent .about-text h4 {
+  font-size: 24px;
+}
+
+body .main .portfolio .portfolio-cards .card .card-text .title h2, body .main .portfolio .portfolio-tab .tab {
+  font-size: 20px;
+}
+
+body .main .contact .contact-cards .contact-content p {
+  font-size: 20px;
+}
+
+body .main .hero .hero-text h3 {
+  font-size: 60px;
+  color: #ffffff;
+}
+
+body .sidebar .menu .menu-text .menu-sections a {
+  font-size: 24px;
+}
+
+body .main .about .about-contenent .about-text p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+body .main .portfolio .portfolio-cards .card .card-text .text-git p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+body .main .portfolio .portfolio-cards .card .card-text h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 32px;
+  right: 32px;
+  width: 60px;
+  height: 60px;
+  border-radius: 99px;
+  background-color: #2e3047;
+  cursor: pointer;
+}
+
+.hamburger {
+  position: relative;
+  top: calc(50% - 2px);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 32px;
+}
+
+.hamburger > span,
+.hamburger > span::before,
+.hamburger > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 99px;
+  background-color: #FFF;
+  transition-duration: 0.25s;
+}
+
+.hamburger > span::before {
+  content: "";
+  top: -8px;
+}
+
+.hamburger > span::after {
+  content: "";
+  top: 8px;
+}
+
+.menu-toggle.is-active .hamburger > span {
+  transform: rotate(45deg);
+}
+
+.menu-toggle.is-active .hamburger > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+.menu-toggle.is-active .hamburger > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #1E1E1E;
+  /* side bar _______________________________________________________*/
+}
+body .purple {
+  color: #9547E5;
+}
+body .pink {
+  color: #F269BB;
+}
+body .green {
+  color: #1FFFA9;
+}
+body .yellow {
+  color: #FEE440;
+}
+body .blue {
+  color: #559FFF;
+}
+body h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #191919;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+}
+body .sidebar .menu {
+  line-height: 70px;
+  padding: 50px 30px;
+  max-width: 200px;
+  margin: auto;
+  justify-content: center;
+}
+body .sidebar .menu .logo {
+  margin-bottom: 50px;
+}
+body .sidebar .menu .logo :hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+body .sidebar .menu .menu-text .menu-sections {
+  border-bottom: solid 1px transparent;
+  cursor: pointer;
+}
+body .sidebar .menu .menu-text .menu-sections a {
+  text-decoration: none;
+  border: none;
+  transition: all 0.5s;
+}
+body .sidebar .menu .menu-text .menu-sections i {
+  font-size: 20px;
+  margin-right: 10px;
+  border: none;
+  transition: all 0.5s;
+}
+body .sidebar .menu .menu-text :hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+body .main {
+  margin-left: 300px;
+}
+body .main .hero {
+  padding: 50px 30px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+body .main .hero .hero-image img {
+  max-width: 600px;
+  width: 500px; /* width of container */
+  height: 380px; /* height of container */
+  object-fit: cover;
+}
+body .main .hero .hero-text h3 {
+  color: #ffffff;
+}
+body .main .hero .hero-text .blue {
+  font-weight: bold;
+  display: contents;
+}
+body .main .hero .hero-icons i {
+  font-size: 40px;
+  margin: 10px 40px;
+  transition: all 0.5s;
+}
+body .main .hero .hero-icons i:hover {
+  transform: scale(1.2);
+}
+body .main .about {
+  padding: 50px 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+body .main .about .about-contenent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .main .about .about-contenent img {
+  max-width: 400px;
+  flex: 0 1 50%;
+}
+body .main .about .about-contenent .about-text {
+  flex: 0 1 50%;
+  background-color: #191919;
+  border: solid 1px #559FFF;
+  padding: 20px;
+  border-radius: 30px;
+}
+body .main .about .about-contenent .about-text h4 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #559FFF;
+}
+body .main .about .about-contenent .about-text p {
+  letter-spacing: 2px;
+  color: #ffffff;
+  padding: 0;
+}
+body .main .skills {
+  padding: 50px 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+body .main .skills .skill-icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+}
+body .main .skills .skill-icons img {
+  margin: 40px;
+  max-width: 70px;
+  height: 60px;
+  transition: all 0.5s;
+}
+body .main .skills .skill-icons img:hover {
+  transform: scale(1.2);
+}
+body .main .portfolio {
+  padding: 50px 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+body .main .portfolio .portfolio-tab {
+  margin-top: 50px;
+}
+body .main .portfolio .portfolio-tab .tabs {
+  display: flex;
+  background-color: #191919;
+  padding: 10px 15px;
+  border-radius: 50px;
+  max-width: 450px;
+  margin: auto;
+}
+body .main .portfolio .portfolio-tab .tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px;
+  width: 200px;
+  padding: 5px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+body .main .portfolio .portfolio-tab .blue {
+  margin: 0 20px;
+}
+body .main .portfolio .portfolio-tab .blue.active {
+  color: #191919;
+  background-color: #559FFF;
+  border: solid 1px #559FFF;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+body .main .portfolio .portfolio-tab .purple.active {
+  color: #191919;
+  background-color: #9547E5;
+  border: solid 1px #9547E5;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+body .main .portfolio .portfolio-tab .pink.active {
+  color: #191919;
+  background-color: #F269BB;
+  border: solid 1px #F269BB;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+body .main .portfolio .portfolio-tab input[id=radio-1]:checked + label {
+  color: #191919;
+  background-color: #9547E5;
+  border: solid 1px #9547E5;
+}
+body .main .portfolio .portfolio-tab input[id=radio-2]:checked + label {
+  color: #191919;
+  background-color: #559FFF;
+  border: solid 1px #559FFF;
+}
+body .main .portfolio .portfolio-tab input[id=radio-3]:checked + label {
+  color: #191919;
+  background-color: #F269BB;
+  border: solid 1px #F269BB;
+}
+body .main .portfolio .portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+body .main .portfolio .portfolio-cards .card {
+  display: none;
+  background-color: #191919;
+  border-radius: 30px;
+  align-items: center;
+  flex: 0 1 40%;
+  margin: 30px;
+  padding: 0 10px;
+  border: solid 1px;
+  justify-content: center;
+}
+body .main .portfolio .portfolio-cards .card.show {
+  display: flex;
+}
+body .main .portfolio .portfolio-cards .card .card-img {
+  margin-right: 50px;
+}
+body .main .portfolio .portfolio-cards .card .card-img img {
+  max-width: 130px;
+}
+body .main .portfolio .portfolio-cards .card a {
+  color: #559FFF;
+}
+body .main .portfolio .portfolio-cards .card .card-text .title {
+  display: flex;
+  align-items: center;
+}
+body .main .portfolio .portfolio-cards .card .card-text .title img {
+  width: 76px;
+  margin-right: 10px;
+}
+body .main .portfolio .portfolio-cards .card .card-text h4 {
+  color: #ffffff;
+  margin: 20px 0;
+}
+body .main .portfolio .portfolio-cards .card .card-text .text-git {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+body .main .portfolio .portfolio-cards .card .card-text .text-git p {
+  color: #ffffff;
+}
+body .main .portfolio .portfolio-cards .card .card-text .text-git i {
+  font-size: 40px;
+  margin-left: 30px;
+}
+body .main .portfolio .portfolio-cards .card .card-text .text-git a {
+  color: #ffffff;
+}
+body .main .portfolio .portfolio-cards .card .card-text .text-git a:hover {
+  color: #559FFF;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+body .main .portfolio .portfolio-cards .web.show {
+  display: block;
+}
+body .main .portfolio .portfolio-cards .web .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+body .main .portfolio .portfolio-cards .web h2 {
+  margin-left: 20px;
+}
+body .main .portfolio .portfolio-cards .web .card-img {
+  max-width: 400px;
+  margin: auto;
+}
+body .main .portfolio .portfolio-cards .web .card-img img {
+  max-width: 400px;
+}
+body .main .portfolio .portfolio-cards .web .card-text {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+body .main .contact {
+  padding: 50px 30px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+body .main .contact .contact-cards {
+  display: flex;
+  justify-content: center;
+}
+body .main .contact .contact-cards .contact-content {
+  flex: 0 1 40%;
+  flex-wrap: wrap;
+  min-width: 400px;
+  margin: 30px;
+  border: solid 1px;
+  padding: 30px 50px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+body .main .contact .contact-cards .contact-content i {
+  font-size: 40px;
+  width: 40px;
+  margin-right: 30px;
+}
+body .main .contact .contact-cards .contact-content p {
+  color: #ffffff;
+}
+body .main .contact .contact-cards .contact-content h5 {
+  color: #559FFF;
+}
+body .main .contact .contact-cards .contact-content a {
+  text-decoration: none;
+}
+body .main .contact .contact-cards .contact-content a :hover {
+  color: #ffffff;
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
+/* __________________________________________________________________ */
+@media (max-width: 1024px) {
+  .sidebar {
+    max-width: 200px;
+  }
+}
+@media (max-width: 992px) {
+  body .menu-toggle {
+    display: block;
+  }
+  body .sidebar {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 100%;
+    max-width: 300px;
+    transition: 0.2s linear;
+    justify-content: center;
+  }
+  body .sidebar .menu {
+    max-width: 200px;
+    margin: auto;
+    margin-top: 100px;
+  }
+  body .sidebar.is-active {
+    left: 0;
+  }
+  body .main {
+    margin-left: 0;
+  }
+  body .main .hero {
+    padding: 50px 30px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  body .main .hero .hero-image img {
+    max-width: 300px;
+  }
+  body .main .hero .hero-text h3 {
+    font-size: 40px;
+    color: #ffffff;
+  }
+  body .main .hero .hero-text .blue {
+    font-size: 50px;
+  }
+  body .main .hero .hero-icons i {
+    font-size: 30px;
+    margin: 10px 20px;
+  }
+  body .main .about {
+    max-width: 600px;
+    margin: auto;
+  }
+  body .main .about .about-contenent {
+    display: block;
+    text-align: left;
+  }
+  body .main .about .about-contenent img {
+    max-width: 250px;
+  }
+  body .main .about .about-contenent p {
+    padding: 30px;
+  }
+  body .main .skills {
+    padding: 50px 30px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  body .main .skills .skill-icons img {
+    margin: 20px;
+    max-width: 40px;
+    height: 35px;
+  }
+  body .main .portfolio {
+    padding: 50px 30px;
+    max-width: 600px;
+    margin: auto;
+  }
+  body .main .portfolio .portfolio-tab {
+    margin-top: 30px;
+  }
+  body .main .portfolio .portfolio-tab .tabs {
+    max-width: 270px;
+  }
+  body .main .portfolio .portfolio-tab .tab {
+    font-size: 16px;
+  }
+  body .main .portfolio .portfolio-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  body .main .portfolio .portfolio-cards .card {
+    max-width: 300px;
+    margin: auto;
+    margin: 30px 0;
+    padding: 15px;
+    flex: 0 1 100%;
+  }
+  body .main .portfolio .portfolio-cards .card .card-img {
+    margin-right: 30px;
+    flex: 0 1 50%;
+  }
+  body .main .portfolio .portfolio-cards .card .card-img img {
+    max-width: 100px;
+  }
+  body .main .portfolio .portfolio-cards .card a {
+    color: #559FFF;
+  }
+  body .main .portfolio .portfolio-cards .card .card-text {
+    flex: 0 1 20%;
+  }
+  body .main .portfolio .portfolio-cards .card .card-text .title {
+    display: flex;
+    align-items: center;
+  }
+  body .main .portfolio .portfolio-cards .card .card-text .title h2 {
+    font-size: 16px;
+  }
+  body .main .portfolio .portfolio-cards .card .card-text .title img {
+    width: 50px;
+    margin-right: 10px;
+  }
+  body .main .portfolio .portfolio-cards .card .card-text h4 {
+    font-size: 16px;
+  }
+  body .main .portfolio .portfolio-cards .card .card-text .text-git {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  body .main .portfolio .portfolio-cards .card .card-text .text-git p {
+    font-size: 12px;
+  }
+  body .main .portfolio .portfolio-cards .card .card-text .text-git i {
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  body .main .portfolio .portfolio-cards .web {
+    flex: 0 1 92%;
+    padding: 20px;
+    margin: 30px 0;
+  }
+  body .main .portfolio .portfolio-cards .web .title img {
+    max-width: 60px;
+  }
+  body .main .portfolio .portfolio-cards .web .card-img {
+    margin-right: 0;
+  }
+  body .main .portfolio .portfolio-cards .web .card-img img {
+    max-width: 250px;
+  }
+  body .main .portfolio .portfolio-cards .web .card-text {
+    max-width: 250px;
+  }
+  body .main .contact {
+    padding: 50px 30px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+  }
+  body .main .contact .contact-cards {
+    display: block;
+    max-width: 400px;
+    margin: auto;
+  }
+  body .main .contact .contact-cards .contact-content {
+    min-width: 200px;
+    margin: 30px 0;
+    border: solid 1px;
+    padding: 20px;
+    justify-content: left;
+  }
+  body .main .contact .contact-cards .contact-content i {
+    margin-right: 40px;
+  }
+  body .main .contact .contact-cards .contact-content p {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */

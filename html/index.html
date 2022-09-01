@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b70fe4772b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../scss/style.css">
+    <title>Sofia Muladze</title>
+    <link rel="icon" href="../images/logo.svg">
+</head>
+<body>
+
+    <!-- Side navigation -->
+    <div>
+      <div class="menu-toggle">
+        <div class="hamburger">
+          <span></span>
+        </div>
+      </div>
+      <aside class="sidebar">
+        <div class="menu">
+          <div class="logo">
+            <a href="#home"><img src="../images/logo.svg" alt="logo"></a>
+            
+          </div>
+          <div class="menu-text">
+            <div class="menu-sections">
+              <a class="purple" href="#home"><i class="fa-solid fa-house purple"></i></a>
+              <a class="purple" href="#home">Home </a>
+            </div>
+    
+            <div class="menu-sections">
+              <a class="yellow" href="#about"><i class="fa-regular fa-user yellow"></i></a>
+              <a class="yellow" href="#about">About</a>
+            </div>
+    
+            <div class="menu-sections"s>
+              <a class="green" href="#portfolio"><i class="fa-solid fa-laptop-code green"></i></a>
+              <a class="green" href="#portfolio">Portfolio</a>
+            </div>
+    
+            <div class="menu-sections">
+              <a class="pink" href="#contact"><i class="fa-solid fa-message pink"></i></a>
+              <a class="pink" href="#contact">Contact</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  
+  <!-- Page content -->
+  <div class="main content">
+    <a name="home"></a>
+    <div class="hero">
+      <div class="hero-image">
+        <img src="../images/hero.svg" alt="avatar">
+      </div>
+      <div class="hero-text">
+        <h3>Hi, my <br> name is <div class="blue"> Sofia</div> </h3>
+      </div>
+      <div class="hero-icons">
+        <a href="https://www.instagram.com/so_muladze/"><i class="fa-brands fa-instagram purple"></i></a>
+        <a href="https://github.com/SofiaMuladze"><i class="fa-brands fa-github yellow"></i></a>
+        <a href="https://wa.me/3519551793"><i class="fa-brands fa-whatsapp green"></i></a>
+        <a href="https://it-it.facebook.com/sofia.muladze"><i class="fa-brands fa-square-facebook pink"></i></a>
+      </div>
+    </div>
+
+    <a name="about"></a>
+    <div class="about">
+      <h3>About Me</h3>
+      <div class="about-contenent">
+        <img src="../images/avatar.png" alt="avatar">
+        <div class="about-text">
+          <h4>Hello,</h4>
+          <p>I'm Sofia Muladze, i love coding and learn new things every day.
+            Two years ago I enrolled at university but found it wasn't for me, so I chose an alternate path with Start2Impact to quickly advance my skills by practicing and minimize the time.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills">
+      <h3>Skills</h3>
+      <div class="skill-icons">
+        <img src="../images/icons/html.png" alt="html">
+        <img src="../images/icons/css.png" alt="css">
+        <img src="../images/icons/sass.png" alt="sass">
+        <img src="../images/icons/bootstrap.png" alt="bootstrap">
+        <img src="../images/icons/xcode.png" alt="xcode">
+        <img src="../images/icons/swift.png" alt="swift">
+        <img src="../images/icons/swiftui.png" alt="swiftui">
+        <img src="../images/icons/figma.png" alt="figma">
+        <img src="../images/icons/illustrator.png" alt="illustrator">
+        <img src="../images/icons/photoshop.png" alt="photoshop">
+      
+      </div>
+      
+    </div>
+
+    <a name="portfolio"></a>
+    <div class="portfolio">
+      <h3>Portfolio</h3>
+
+      <div class="portfolio-tab">
+        <div class="tabs" id="tabs">
+          <label class="tab purple" onclick="filterSelection('app')">App</label>
+          <label class="tab blue active" onclick="filterSelection('all')">All</label>
+          <label class="tab pink" onclick="filterSelection('web')">Web</label>
+        </div>
+      </div>
+
+      <div class="portfolio-cards">
+        <!-- card 1 -->
+        <div class="card purple app">
+          <div class="card-img">
+            <img src="../images/portfolio/weather-img.GIF" alt="weather-img"> <!-- Screen img -->
+          </div>
+          <div class="card-text">
+            <div class="title">
+              <img src="../images/portfolio/weather.png" alt="weather"> <!-- Logo img -->
+              <h2>Weather</h2> <!-- Title -->
+            </div>
+            <div>
+              <h4>Weather Forecast App</h4> 
+            </div>
+            <div class="text-git">
+              <p>
+                Xcode <br>
+                Swift <br>
+                Openweather API
+              </p>
+              <a href="https://github.com/SofiaMuladze/Weather">
+                <i class="fa-brands fa-github"></i> <!-- GitHub icon -->
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card pink app">
+          <div class="card-img">
+            <img src="../images/portfolio/rps-img.GIF" alt="RPS">
+          </div>
+          <div class="card-text">
+            <div class="title">
+              <img src="../images/portfolio/rps.png" alt="rps">
+              <h2>RPS</h2>
+            </div>
+            <div>
+              <h4>Rock Paper Scissors Game</h4>
+            </div>
+            <div class="text-git">
+              <p>
+                Xcode <br>
+                Swift <br>
+                SwiftUI
+              </p>
+              <a href="https://github.com/SofiaMuladze/RPS">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card green app">
+          <div class="card-img">
+            <img src="../images/portfolio/ibm-img.GIF" alt="ibm-img">
+          </div>
+          <div class="card-text">
+            <div class="title">
+              <img src="../images/portfolio/ibm.png" alt="ibm">
+              <h2>BMI</h2>
+            </div>
+            <div>
+              <h4>BMI Calculator App</h4>
+            </div>
+            <div class="text-git">
+              <p>
+                Xcode <br>
+                Swift
+              </p>
+              <a href="https://github.com/SofiaMuladze/BMI-Calculator">
+                <i class="fa-brands fa-github"></i>
+              </a> 
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card yellow app">
+          <div class="card-img">
+            <img src="../images/portfolio/buildings-img.GIF" alt="RPS">
+          </div>
+          <div class="card-text">
+            <div class="title">
+              <img src="../images/portfolio/buildings.png" alt="rps">
+              <h2>Buildings</h2>
+            </div>
+            <div>
+              <h4>Famous Buildings Quiz</h4>
+            </div>
+            <div class="text-git">
+              <p>
+                Xcode <br>
+                Swift <br>
+                SwiftUI
+              </p>
+              <a href="https://github.com/SofiaMuladze/FamousBuilding">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card 5 -->
+        <div class="card purple web">
+          <div class="title">
+            <img src="../images/portfolio/mun.png" alt="Candles">
+            <h2>Candles</h2>
+          </div>
+          <div class="card-img">
+            <img src="../images/portfolio/mun-img.PNG" alt="Candles">
+          </div>
+          <div class="card-text">
+            
+            <div>
+              <h4>One-Page Website</h4>
+            </div>
+            <div class="text-git">
+              <p>
+                Html5 <br>
+                Css3 <br>
+                Scss
+              </p>
+              <a href="https://github.com/SofiaMuladze/Mun-Candles">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- card 6 -->
+        <div class="card pink web">
+          <div class="title">
+            <img src="../images/portfolio/bliss.png" alt="bliss">
+            <h2>Bliss</h2>
+          </div>
+          <div class="card-img">
+            <img src="../images/portfolio/bliss-img.png" alt="bliss">
+          </div>
+          <div class="card-text">
+            <div>
+              <h4>One-Page Website</h4>
+            </div>
+            <div class="text-git">
+              <p>
+                Html5 <br>
+                Css3/Scss<br>
+                JavaScript
+              </p>
+              <a href="https://github.com/SofiaMuladze/Bliss">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a name="contact"></a>
+    <div class="contact blue">
+      <h3>Contact me </h3>
+      <div class="contact-cards">
+        <div class="contact-content">
+          <i class="fa-solid fa-mobile"></i>
+          <div>
+            <a href="tel:+393519551793"><h5>Call me</h5></a>
+            <a href="tel:+393519551793"><p>+39 351 955 1793</p></a>
+          </div>
+        </div>
+        <div class="contact-content">
+          <i class="fa-solid fa-at"></i>
+          <div>
+            <a href="mailto: so.muladze@gmail.com"><h5>Send Email</h5></a>
+            <a href="mailto: so.muladze@gmail.com"><p>So.Muladze@gmail.com</p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/tab.js"></script>
+  <script src="../js/script.js"></script>
+</body>
+</html>

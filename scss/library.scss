@@ -1,0 +1,88 @@
+/* Colors */
+$black: #000000;
+$colorBg-1: #1E1E1E;
+$colorBg-2: #191919;
+$blue: #559FFF;
+$purple: #9547E5;
+$yellow: #FEE440;
+$green: #1FFFA9;
+$pink: #F269BB;
+$white: #ffffff;
+/* Fonts */
+
+  
+%rubik-regular {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+}
+
+%rubik-light {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+}
+
+%sarala-regular {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+}
+
+%sarala-bold {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 700;
+}
+/* font style */
+%font1-xl {
+    @extend %sarala-regular;
+    font-size: 60px;
+    color: $blue;
+}
+
+%font1-l {
+    @extend %sarala-regular;
+    font-size: 36px;
+    color: $blue;
+}
+
+%font1-m {
+    @extend %sarala-regular;
+    font-size: 24px;
+}
+
+%font1-s-bold {
+    @extend %sarala-bold;
+    font-size: 20px;
+}
+%font1-s {
+    @extend %sarala-regular;
+    font-size: 20px;
+}
+
+%font2-xl {
+    @extend %rubik-regular;
+    font-size: 60px;
+    color: $white;
+}
+
+%font2-l {
+    @extend %rubik-regular;
+    font-size: 24px;
+}
+
+%font2-m {
+    @extend %rubik-regular;
+    font-size: 20px;
+    color: $white;
+}
+
+%font2-s {
+    @extend %rubik-regular;
+    font-size: 16px;
+    color: $white;
+}
+
+%font2-s-bold {
+    @extend %rubik-regular;
+    font-size: 16px;
+    font-weight: bold;
+    color: $white;
+}
