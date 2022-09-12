@@ -1,6 +1,6 @@
 /* Colors */
 /* Fonts */
-body .main .portfolio .portfolio-cards .card .card-text h4, .contact .form-container .form .contact-form, body .main .portfolio .portfolio-cards .card .card-text .text-git p, body .main .about .about-contenent .about-text p, body .sidebar .menu .menu-text .menu-sections a, body .main .hero .hero-text h3 {
+body .main .portfolio .portfolio-cards .card .card-text h4, .contact .form-container .form .contact-form, body .main .portfolio .portfolio-cards .card .card-text .text-git p, body .main .about .about-contenent .about-text p, .sidebar .menu .menu-text .menu-sections a, body .sidebar .menu .menu-text .menu-sections a, body .main .hero .hero-text h3 {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
 }
@@ -43,7 +43,7 @@ body .main .hero .hero-text h3 {
   color: #ffffff;
 }
 
-body .sidebar .menu .menu-text .menu-sections a {
+.sidebar .menu .menu-text .menu-sections a, body .sidebar .menu .menu-text .menu-sections a {
   font-size: 24px;
 }
 
@@ -453,8 +453,55 @@ body .main .contact .button .contact-btn:hover {
   cursor: pointer;
 }
 
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #191919;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+}
+.sidebar .menu {
+  line-height: 70px;
+  padding: 50px 30px;
+  max-width: 200px;
+  margin: auto;
+  justify-content: center;
+}
+.sidebar .menu .logo {
+  margin-bottom: 50px;
+}
+.sidebar .menu .logo :hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+.sidebar .menu .menu-text .menu-sections {
+  border-bottom: solid 1px transparent;
+  cursor: pointer;
+}
+.sidebar .menu .menu-text .menu-sections a {
+  text-decoration: none;
+  border: none;
+  transition: all 0.5s;
+}
+.sidebar .menu .menu-text .menu-sections i {
+  font-size: 20px;
+  margin-right: 10px;
+  border: none;
+  transition: all 0.5s;
+}
+.sidebar .menu .menu-text :hover {
+  transition: all 0.5s;
+  transform: scale(1.1);
+}
+
 .contact {
-  margin: 50px 200px;
+  padding: 50px;
+  margin-left: 300px;
   display: flex;
   align-items: center;
 }
